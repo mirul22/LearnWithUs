@@ -261,6 +261,44 @@ section div.container:hover div.middle {
 }
 /*End Developer Section*/
 
+section.social-icons ul li a i span {
+    margin-left: 20%;
+}
+
+section.social-icons ul li a i.fa {
+    width: 15%;
+    padding: 20px;
+    font-size: 130%;
+    z-index: 1000;
+    position: fixed;
+    right: -13%;
+    color: #fff;
+    border-radius: 10px 0 0 10px;
+    box-shadow: 2px 5px 5px #888;
+    transition: right .8s, box-shadow .8s;
+}
+
+section.social-icons ul li a i.fa:hover {
+    right: -5%;
+    box-shadow: none;
+}
+
+section.social-icons ul li a i.fa-google-plus {
+    top: 30%;
+    background: #d34836;
+}
+
+section.social-icons ul li a i.fa-facebook {
+    top: 40%;
+    background: #3b5998;
+}
+
+section.social-icons ul li a i.fa-twitter {
+    top: 50%;
+    background: #4099ff;
+}
+/*End Social Media Section*/
+
 footer {
     margin-top: 20px;
     padding: 1% 0;
