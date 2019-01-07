@@ -9,6 +9,32 @@
         <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     </head>
     <body>
+        <!-- Start Modal Box -->
+        <input type="checkbox" id="registeration">
+        <form action="" id="register">
+            <label for="registeration" id="close">&times;</label>
+            <label for="username">Username:</label>
+            <input type="text" placeholder="Your Name">
+            <label for="email">Email:</label>
+            <input type="email" placeholder="Your Email Adress">
+            <label for="login">Login name:</label>
+            <input type="text" placeholder="Choose a Login Name">
+            <label for="password">Password:</label>
+            <input type="password" placeholder="Password">
+            <label for="password">Confirm Password:</label>
+            <input type="password" placeholder="Confirm Password">
+            <input type="submit" value="Register">
+        </form>
+        <input type="checkbox" id="login">
+        <form action="" id="sign-in">
+            <label for="login" id="close">&times;</label>
+            <label for="email">Email Address:</label>
+            <input type="email" placeholder="Your Email">
+            <label for="password">Password:</label>
+            <input type="password" placeholder="Your Password">
+            <input type="submit" value="Login">
+        </form>
+        <!-- End Modal Box -->
         <!-- Start main Wrapper-->
        <div class="main-wrapper">
           <!-- Start Navigation -->
@@ -31,8 +57,8 @@
                </ul>
                
                <ul class="nav2">
-                   <li><a href="#">Login</a></li>
-                   <li><a href="#">Registration</a></li>
+                   <li><a href="#"><label for="login">Login</label></a></li>
+                   <li><a href="#"><label for="registeration">Registration</label></a></li>
                </ul>
            </nav>
            <!-- End Navigation -->
