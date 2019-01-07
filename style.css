@@ -19,6 +19,93 @@ a {
 }
 /*End Comon Section*/
 
+form {
+    box-sizing: border-box
+    display: none;
+    position: fixed;
+    top: 30%;
+    left: 32.5%;
+    width: 35%;
+    height: auto;
+    padding: 20px 40px;
+    background: linear-gradient(#888,#ccc);
+    border: 1px solid #777;
+    border-radius: 5px;
+    z-index: 1000;
+    animation: fade-in 1s;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    
+    100% {
+        opacity: 1;
+    }
+}
+
+form input {
+    display: block;
+    width: 90%;
+    margin: 0 0 15px 3%;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 100%;
+}
+
+form input[type="submit"] {
+    background: #78b1bc;
+    color: #fff;
+    width: 30%;
+    max-width: 150px;
+    transition: background .2s;
+}
+
+form input[type="submit"]:hover {
+    background: #98d3de;
+    cursor: pointer;
+}
+
+form label#close {
+    font-size: 250%;
+    color: #ccc;
+    position: absolute;
+    top: 0;
+    right: 15px;
+}
+
+form label#close:hover {
+    color: #222;
+}
+
+form label {
+    margin-left: 3%;
+    font-weight: 400;
+    color: #fff;
+}
+
+input#registration:checked ~ form#register {
+    display: block;
+}
+
+input#registration:checked ~ .main-wrapper {
+    user-select: none;
+    opacity: .3;
+    pointer-events: none;
+}
+
+input#login:checked ~ form#sign-in {
+    display: block;
+}
+
+input#login:checked ~ .main-wrapper {
+    user-select: none;
+    opacity: .3;
+    pointer-events: none;
+}
+
+/*End Modal Box Section*/
 
 nav {
     width: 80%;
