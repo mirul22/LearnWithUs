@@ -20,7 +20,67 @@ a {
 /*End Comon Section*/
 
 
-
+nav {
+    width: 80%;
+    margin-left: 10%;
+    display: flex;
+    position: fixed;
+    background: linear-gradient(#fff, #ccc);
+    border-radius: 20px;
+    z-index: 100;
+}
+nav ul {
+    margin: auto;
+    padding: 8px 0;
+}
+nav ul li {
+    display: inline;
+}
+nav ul li a {
+    font-size: 100%;
+    margin-left: 5px;
+    padding: 2px 15px;
+    border: 1px solid #c9c9c9;
+    border-radius: 5px;
+    color: #fff;
+    background: linear-gradient(#eee, #aaa);
+    transition: background .2s, color .2s;
+}
+nav ul li a:hover {
+    background: linear-gradient(#fff, #ccc);
+    color: #777;
+}
+nav ul li#drop {
+    position: relative;
+}
+nav ul li ul#dropdown {
+    display: none;
+    position: absolute;
+    left: -60px;
+    top: 20px;
+    width: 200%;
+    text-align: center;
+}
+nav ul li ul#dropdown li {
+    display: block;
+    padding: 3px;
+}
+nav ul li ul#dropdown li a {
+    background: linear-gradient(#fff, #eee);
+    color: #555;
+    border: none;
+}
+nav ul li ul#dropdown li a:hover {
+    background: linear-gradient(#eee, #aaa);
+    color: #fff;
+}
+nav ul li#drop:hover #dropdown {
+    display: block;
+}
+nav ul li a#active {
+    background: linear-gradient(#9ad3de, #47909a);
+}
+/*End Nav Section*/
 
 
 
